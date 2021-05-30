@@ -1,0 +1,164 @@
+<html>
+<head>
+   <title> Sign Up page</title>
+<style>
+.border 
+{
+  align:center;
+  border-style: solid;
+  border-color: white;
+  width:  300px;
+  height: 600px;
+  border-width:30px;
+  padding: 15px;
+}
+.button 
+{
+  background: linear-gradient(to bottom right, #0066ff 0%, #ff99cc 100%);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}   
+
+</style>
+<script>
+	   function validate()
+      {
+         if(document.getElementById("t1").value== "")
+         {
+            alert("Please provide your name!" );
+            return false;
+         }
+		 if(document.getElementById("t9").value== "")
+         {
+            alert("Please provide your name!" );
+            return false;
+         }
+		 if(document.getElementById("t10").value== "")
+         {
+            alert("Please provide your name!" );
+            return false;
+         }
+		 var num = document.getElementById("t8").value;
+         if(document.getElementById("t8").value == "")
+         {
+            alert("Phone number cannot be left blank" );
+            return false;
+         }
+         if(num<10)
+         {
+            alert("Phone number cannot be less than 10 digits");
+            return false;
+         }
+		 if(document.getElementById("t2").value== "")
+         {
+            alert("Please provide password" );
+            return false;
+         }
+         if(document.getElementById("t3").value== "")
+         {
+            alert("Retype Password");
+            return false;
+         }
+         if(t2.value!=t3.value)
+         {
+            alert("Password Mismatch, Provide same password");
+            return false;
+         }
+         var emailID = document.getElementById("t4").value;
+         var atpos = emailID.indexOf("@");
+         var dotpos = emailID.lastIndexOf(".");
+         if (document.getElementById("t4").value == ""||atpos<1||(dotpos<atpos+2))
+         {
+            alert("Please enter correct email ID");
+            return false;
+         }
+		 var option=document.getElementsByName('Gender');
+		 if (!(option[0].checked||option[1].checked)) {
+             alert("Please Select Your Gender");
+             return false;
+         }
+		 var abc = document.getElementById("t6").value;
+         if(document.getElementById("t6").value == "")
+         {
+            alert("Please enter your address" );
+            return false;
+         }
+         if(abc<30)
+         {
+            alert("please enter your address")
+            return false;
+         }
+
+
+         {
+            alert("form submitted successfully");
+         return( true );
+         }
+      }
+	</script>
+   </head>
+
+<body style="background-color:#00ff00;padding-top:5%;padding-left:38%">
+<form action=" file:///D:/car%20rentals/car%20main.html " name="myForm" onsubmit="return(validate());">
+<div class="border" align="center">
+<div>
+   <label> Firstname: </label>
+   <input type="text" size="15" name=" Name" id="t1">
+</div>
+</br>
+<div>
+   <label> Middlename: </label>
+   <input type="text" size="15" name=" Name" id="t9">
+</div>
+</br>
+<div>
+   <label> Lastname: </label>
+   <input type="text" size="15" name=" Name" id="t10">
+</div>
+</br>
+<div>
+	<label> Gender </label> </br>
+	<input type="radio" name="Gender" id="t5">Male  </br>
+	<input type="radio" name="Gender" id="t5">Female</br>
+	<input type="radio" name="Gender"/> Other </br>
+</div>
+</br>
+<div>
+	<label> Phone No: </label>
+	<input type="Phone" size="15" maxlength="10" name="" id="t8">
+</div>
+</br>
+<div>
+	<label> address:  </label> </br>
+	<textarea cols="30" rows="5" value="address" id="t6">
+	</textarea>
+</div>
+</br>
+<div>
+   <label> Email: </label>
+   <input type="mail" size="15" name="" id="t4">
+</div>
+</br>
+<div>
+   <label title="password pattern:[A-Z] {3} [a-z] {4} [@_$#!*-] {1}"> Password: </label>
+   <input type="Password" title="password pattern:[A-Z] {3} [a-z] {4} [@_$#!*-] {1}" name="" id="t2">
+</div>
+</br>
+<div>
+   <label> Retype Password: </label>
+   <input type="Password" name="" id="t3">
+</div>
+</br>
+</br>
+<button class="button" type="submit" value="Submit" >Submit</button>  
+ <button class="button" type="reset" value="Reset">Reset</button>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+speedon car rental
+</title>
+<link rel="icon" href="back3.jpg" type="image/icon type">
+<style>
+
+.header 
+{
+  background-color:#00ff00;
+  padding: 5px;
+  text-align: center;
+}
+.navbar 
+{
+  position: sticky;
+  top: 0;
+  overflow:hidden;
+  background-color:  red;
+  padding-bottom: 5px;
+}
+.navbar a 
+{
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+}
+.navbar a.right 
+{
+  float: right;
+}
+.navbar a:hover 
+{
+  background-color: #ddd;
+  color: black;
+}
+
+.grid-container 
+{
+  padding: 10px;
+  padding-left:30px;
+  background-image: url('back9.jpg');
+  background-size: 100% 700px;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  font-family:times new roman;
+}
+
+.grid-container1
+{
+  display: grid;
+  grid-template-columns: 50% 49.5%;
+  grid-gap: 10px;
+  padding: 10px;
+  padding-right:10px;
+  height:auto;
+  font-size:30px;
+}
+.grid1div
+{
+  background-image: url('back10.jpg');
+  background-repeat:no-repeat;
+  background-size:100.5% 100.5%;
+  text-align:left;
+  height:auto;
+  padding:10px;
+}
+.grid-container1 > div 
+{
+  border: 2px solid black;
+  font-size: 30px;
+}
+
+input[type=text]
+{
+  width: 30%;
+  padding: 12px;
+  border: 3px solid orange;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=option], select
+{
+  width: 13%;
+  padding: 12px;
+  border: 3px solid orange;
+  border-radius: 5px;
+}
+input[type=date]
+{
+  width: 25%;
+  padding: 12px;
+  border: 3px solid orange;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=search]
+{
+  width: 25%;
+  padding: 12px;
+  border: 3px solid orange;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=time],  textarea
+{
+  width: 25%;
+  padding: 12px;
+  border: 3px solid orange;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.grid-container2
+{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 15px;
+  background-image: url('back11.jpg');
+  background-repeat:no-repeat;
+  background-size:100.5% 100.5%;
+  text-align:left;
+  height:auto;
+  padding:10px;
+  padding: 30px;
+  padding-right:10px;
+}
+
+.grid-container2 > div 
+{
+  border: 1px solid black;
+  font-size: 30px;
+}
+.button
+{
+	border: 3px solid black;
+	padding: 10px;
+	background-color: powderblue;
+	width: :auto;
+	height:auto;
+}
+.button:hover
+{
+	background-color:green;
+	color:white;
+}
+.border
+{
+	border:5px solid black;
+	border-radius: 5%;
+	padding:50px;
+	padding-top:5px;
+	padding-bottom:5px;
+	width:210px;
+	height:405px;
+}
+.border1
+{
+	border:3px solid black;
+	width:5px;
+	height:10px;
+}
+
+.callout 
+{
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.callout-header 
+{
+  padding: 25px 15px;
+  background: #555;
+  font-size: 30px;
+  color: white;
+}
+
+.callout-container 
+{
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+
+.closebtn 
+{
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover 
+{
+  color: yellow;
+}
+.footer 
+{
+  border:2px solid black;
+  padding: 20px; 
+  text-align: center; 
+}
+.navbar1
+{
+  overflow:hidden;
+  background-color: red;
+  height:50px;
+  font-size:20px;
+  padding-bottom: 5px;
+  padding-top:40px;
+}
+.navbar1 a 
+{
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+  
+}
+.navbar1 a:hover 
+{
+  background-color: #ddd;
+  color: black;
+}
+
+</style>
+
+</head>
+<body style="font-family:times new roman";>
+<marquee class="header" behavior="scroll" direction="left" scrollamount="10"><h1 style="color:white"> <><><><>WELCOME TO SPEEDON CARS<><><><> BOOK YOUR CAR WITH US<><><><></h1>
+</marquee>
+<div class="callout">
+  <div class="callout-header">IMPORTANT NOTE</div>
+	<span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-container">
+    <p> if there was any case on vehicle or happened any accident when our car car is with you then you are the total responsibility </p>
+  </div>
+</div>
+
+<div class="navbar">
+  <img src="back3.jpg" style="width:70px;height:60px;border-radius: 50%;padding-left:5px;padding-top:5px" > 
+  <a href="https://www.tripadvisor.in/" target="_blank" class="right"><strong>POPULAR LOCATIONS</strong></a>
+  <a href="file:///D:/car%20rentals/managebooking.html"  target="_blank" class="right"><strong>MANAGE BOOKING</strong></a>
+  <a href="file:///D:/car%20rentals/login%20form.html" target="_blank" class="right"><strong>LOG IN</strong></a>
+  <a href="file:///D:/car%20rentals/sign%20up%20form.html" class="right" target="_blank" ><strong>SIGN UP</strong></a>
+  <a href="file:///D:/car rentals/work.html" class="right" ><strong>HOME</strong></a>
+</div>
+</br></br>
+<div class="grid-container">
+	<div style="font-size:30px;"> </br>
+		<div id="form1">
+			HIRE A CAR BY SELECTING BELOW THINGS:- </br></br>
+			<b> CAR COMPANY: </b> </br>
+			<select name="Company" id="subject">
+				<option value="" selected="selected">Select car company</option>
+			</select>
+			</br></br>
+			<b> CAR MODEL: </b> </br>
+			<select name="Model" id="topic">
+				<option value="" selected="selected">select your car model</option>
+			</select>
+			</br></br>
+			<b> CAR PRICE:</b> </br>
+			<select name="Price" id="chapter">
+				<option value="" selected="selected">click here to check and select your car price</option>
+			</select>
+		</div>
+		</br>
+	</div>	
+</div>	
+	</br></br>
+	<div style="background-color: #cccccc;border:1px solid #cccccc">
+		<p style="text-align:center;font-size:30px"> WHAT SETS <span style="color: #0000ff"><strong><u> SPEEDON CARS ? </u></strong></span> </p> 
+		<img src="image4.jpg" alt="image error" style="margin-left:5%;width:90%;height:200px">
+	</div>
+	</br></br>
+<div class="grid-container1">
+	<div class="grid1div" style="color:white" >
+		<strong> <u> LET'S FIND YOUR IDEAL CAR </u> </strong> 
+		</br></br>
+		<strong> ENTER PICKUP LOCATION </STRONG> </br>
+		<input type="text" size=35 maxlength=30 placeholder="ENTER THE PICKUP LOCATION"></br></br>
+		<strong>PICKUP DATE</strong> 
+		<input type="date"  id="birthday" name="pick up date" >
+		<strong> DROPOFF DATE</strong> 
+		<input type="date" id="birthday" name="drop off date"> </br> </br>
+		<div>
+			<strong> PURPOSE OF RENTAL </strong> </br>
+			<input type="radio" name="others"> businees
+			<input type="radio" name="others">licence
+			<input type="radio" name="others"> family trip
+			<input type="radio" name="others"> Other   </br> </br>
+		</div>
+		<strong> ENTER TIMINGS: </STRONG> </br> </br>
+		<strong> PICKUP TIME </STRONG>
+		<input type="time" id="appt" name="appt"> 
+		<strong> DROPOFF TIME:</strong>
+		<input type="time" id="appt" name="appt"> </br> </br>
+		<a onclick="myfunction( )"><button style="align: center;" class="button"><strong>SAVE</strong></button></a>
+
+		<div style="text-align:center">
+			<input type="search" placeholder="Search.." name="search"> </br>
+			<div class="footer">
+				<h2 STYLE="font-size:20px">RATE US AND SHARE YOUR EXPERIENCE WITH US</h2>
+				<textarea cols="80" rows="5" value="address">  </textarea>  
+			</div>
+		</div>
+	</div>	
+	<div>
+		<div class="grid-container2">	
+			<strong style="font-size:30px;padding-left:5px;"> SOME OF OUR POPULAR LOCATIONS: </u></STRONG> </br>	
+			<div class="border">
+				<p><strong> <center> BANGALORE </center> </strong> <p>
+				<img src="place.jpeg" alt="image not available" style="width:200px;height:200px;border-radius: 5%;	border:3px solid #555;"></br>
+				<a href="https://www.tripadvisor.in/Attractions-g297628-Activities-Bengaluru_Bangalore_District_Karnataka.html" target="_blank" style="align:right">click here</a> to know more information
+			</div>
+			
+			<div class="border">
+				<p><strong> <center> COIMBATORE </center> </strong> <p>
+				<img src="place2.jpg" alt="image not available" style="width:200px;height:200px;border-radius: 5%;	border:3px solid #555;"> </br>
+				<a href="https://www.tripadvisor.in/Attractions-g297675-Activities-Coimbatore_Coimbatore_District_Tamil_Nadu.html" target="_blank" style="align:right">click here</a> to know more information
+			</div>				
+			
+			<div class="border">
+				<p><strong> <center> MUNNAR </center> </strong> <p>
+				<img src="place3.jpg" alt="image not available" style="width:200px;height:200px;border-radius: 5%;	border:3px solid #555;"> </br>
+				<a href="https://www.tripadvisor.in/Tourism-g303881-Munnar_Idukki_District_Kerala-Vacations.html" target="_blank" style="align:right">click here</a> to know more information
+			</div>				
+			
+			<div class="border">
+				<p><strong> <center> TIRUPATHI </center> </strong> <p>
+				<img src="place4.jpg" alt="image not available" style="width:200px;height:200px;border-radius: 5%;	border:3px solid #555;"> </br>
+				<a href="https://www.tripadvisor.in/Tourism-g297587-Tirupati_Chittoor_District_Andhra_Pradesh-Vacations.html" target="_blank" style="align:right">click here</a> to know more information
+			</div>
+			<div>
+				<p>
+					<a href="https://www.tripadvisor.in/" target="_blank" style="align:right">click here </a> for our popular locations  
+				</p>
+			</div>	
+		</div>	
+	</div>
+</div>
+</br></br>
+<div class="navbar1">
+   <a href="file:///D:/car%20rentals/privacy%20policy.pdf" target="_blank" class="right" style="margin-left:40%"><strong>PRIVACY POLICY</strong></a>
+   <a href="file:///D:/car%20rentals/terms%20and%20conditions.pdf" target="_blank" class="right"><strong>TERMS & CONDITIONS</strong></a>
+   <a href="file:///D:/car%20rentals/aboutus.html" target="_blank" class="right"><strong>ABOUT US</strong></a>
+</div>
+</br></br>
+<div style="border:3px solid black;background-color:#ff9900">
+	 <p> <h2 style="margin-left:45%"> <strong> OUR TRAVEL PATNER </strong> </h2> </p> </br>
+	<img src="trip.jpg" alt="error" style="width:200px;height:200px;margin-left:46%"> 
+	<a href="https://www.tripadvisor.in/" target="_blank" > <b>click here to visit tripadvisor </b></a>
+	</br></br>
+	<strong> <span style="margin-left:40%;font-size:25px;">  BOOK YOUR HOTEL THROUGH TRIP ADVISOR </span> </strong>
+	</br></br>
+</div>
+</br></br>
+<div class="footer" style="  background-color:skyblue;color:white;">
+  		<p>
+  			<p style="text-align: center;font-size: 30px"> Serviceable Cities</p> </br>
+			<pre style="text-align: justify;font-size: 20px">
+				 Car Rental in Bangalore  	        Car Rental in Pune
+				 Car Rental in Hyderabad	        Car Rental in Kolkata
+				 Car Rental in Mumbai	                Car Rental in Ahmedabad
+				 Car Rental in Delhi-NCR	        Car Rental in Bhubaneswar
+				 Car Rental in Chennai	                Car Rental in Chandigarh	
+			</pre>
+		</br>
+			<pre style="text-align:justify;font-size: 20px">	
+				Car Rental in Coimbatore  		Car Rental in Nagpur
+			        Car Rental in Jaipur	  		Car Rental in Surat
+			        Car Rental in Kochi	      		Car Rental in Tirupati
+			        Car Rental in Mangalore	  		Car Rental in Trivandrum
+			        Car Rental in Mysore	  		Car Rental in Vadodara
+			        Car Rental in Vizag       		Car Rental in Vijayawada
+			</pre>	
+  		</p>
+</div>
+</br></br>
+<script>
+var subjectObject = 
+{
+  "SUZUKI": 
+  {
+    "swift": ["12rupees/km"],
+    "baleno": ["12rupees/km"],
+    "Dzire": ["13rupees/km"],
+	"breeza": ["15rupees/km"],
+	"ertiga": ["16rupees/km"],
+	"XL6": ["25rupees/km"],
+  },
+  "HONDA": 
+  {
+    "Amaze": ["14rupees/km"],
+    "newcity": ["20rupees/km"],
+    "jazz": ["15rupees/km"],
+	"WR-V": ["16rupees/km"],
+  },
+  "MAHINDRA": 
+  {
+    "Thar": ["15rupees/km"],
+    "XUV300": ["13rupees/km"],
+    "Bolero": ["20rupees/km"],
+	"scorpio": ["25rupees/km"],
+	"XUV500": ["28rupees/km"],
+	"Marazzo": ["22rupees/km"]
+  },
+  "TATA": 
+  {
+    "Nexon": ["14rupees/km"],
+    "Safari": ["18rupees/km"],
+    "Altroz": ["12rupees/km"],
+	"Harrier": ["25rupees/km"],
+	"Tigor": ["12rupees/km"],
+  },
+  "FORD": 
+  {
+    "EcoSport": ["14rupees/km"],
+    "Figo": ["12rupees/km"],
+    "FreeStyle": ["13rupees/km"],
+	"Aspire": ["13rupees/km"],
+  },
+  "RENAULT": 
+  {
+    "Kwid": ["11rupees/km"],
+    "Triber": ["12rupees/km"],
+    "Kiger": ["13rupees/km"],
+	"Duster": ["20rupees/km"],
+  },
+  "HYUNDAI": 
+  {
+    "Creta": ["16rupees/km"],
+    "Venue": ["14rupees/km"],
+    "i20": ["13rupees/km"],
+	"Grand i10 Nios": ["12rupees/km"],
+	"Verna": ["12rupees/km"],
+	"Santro": ["12rupees/km"]
+  },
+  "TOYOTA": 
+  {
+    "Urban Cruiser": ["14rupees/km"],
+    "Glanza": ["13rupees/km"],
+    "Yaris": ["14rupees/km"],
+	"Crysta": ["18rupees/km"],
+  },
+  "NISSAN": 
+  {
+    "Magnite": ["12rupees/km"],
+    "Kicks": ["18rupees/km"],
+    "Kicks Facelift": ["15rupees/km"],
+  }
+}
+window.onload = function() {
+  var subjectSel = document.getElementById("subject");
+  var topicSel = document.getElementById("topic");
+  var chapterSel = document.getElementById("chapter");
+  for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    chapterSel.length = 1;
+    topicSel.length = 1;
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y, y);
+    }
+  }
+  topicSel.onchange = function() {
+    //empty Chapters dropdown
+    chapterSel.length = 1;
+    //display correct values
+    var z = subjectObject[subjectSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
+function myfunction()
+{
+	alert("you options are submited, the car will be given to you within 24hrs");
+}
+</script>
+</body>
+</html>
